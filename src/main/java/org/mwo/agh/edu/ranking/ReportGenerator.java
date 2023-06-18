@@ -44,12 +44,15 @@ public class ReportGenerator {
     private Map<Object, Object> limitMap(List<Map.Entry<Object, Object>> entries, int limit) {
         Map<Object, Object> limitedMap = new LinkedHashMap<>();
         int count = 0;
+        double lastValue = 0.0;
+
         for (Map.Entry<Object, Object> entry : entries) {
-            if (count >= limit) {
+            if (count >= limit && !entry.getValue().equals(lastValue)) {
                 break;
             }
             limitedMap.put(entry.getKey(), entry.getValue());
             count++;
+            lastValue = (Double) entry.getValue();
         }
         return limitedMap;
     }

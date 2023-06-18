@@ -34,8 +34,8 @@ public class BarChartDisplayDays implements ExampleChart<CategoryChart> {
 
         CategoryChart chart =
                 new CategoryChartBuilder()
-                        .width(1300)
-                        .height(800)
+                        .width(1600)
+                        .height(1000)
                         .title(DaysToHoursRanking.FULL_TITLE)
                         .xAxisTitle("Dzien w roku")
                         .yAxisTitle("Liczba godzin")

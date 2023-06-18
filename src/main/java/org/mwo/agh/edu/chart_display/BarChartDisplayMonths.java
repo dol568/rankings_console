@@ -33,8 +33,8 @@ public class BarChartDisplayMonths implements ExampleChart<CategoryChart> {
 
         CategoryChart chart =
                 new CategoryChartBuilder()
-                        .width(1300)
-                        .height(800)
+                        .width(1600)
+                        .height(1000)
                         .title(MonthsToHoursRanking.FULL_TITLE)
                         .xAxisTitle("Miesiac w roku")
                         .yAxisTitle("Liczba godzin")

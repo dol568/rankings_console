@@ -31,7 +31,7 @@ public class PieChartDisplay implements ExampleChart<PieChart> {
     public PieChart getChart(Map<Object, Object> map) {
 
         PieChart chart =
-                new PieChartBuilder().width(1300).height(800).title(EmployeesToHoursRanking.FULL_TITLE).build();
+                new PieChartBuilder().width(1600).height(1000).title(EmployeesToHoursRanking.FULL_TITLE).build();
 
         Color[] sliceColors =
                 new Color[]{
