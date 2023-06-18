@@ -104,11 +104,10 @@ public class XLSReader {
             for (File f : files) {
                 if (f.isDirectory())
                     fileList.addAll(listFiles(f.getPath()));
-                else
-                    if (f.isFile() && f.getName().matches("[a-zA-Z]+_[a-zA-Z]+\\.xls"))
-                        fileList.add(f);
-                }
+                else if (f.isFile() && f.getName().matches("[a-zA-Z]+_[a-zA-Z]+\\.xls"))
+                    fileList.add(f);
             }
+        }
         return fileList;
     }
 }

@@ -12,7 +12,7 @@ public class EmployeesToHoursRankingPrinter extends RankingPrinter {
         System.out.println(line);
         System.out.printf("| %-44s |%n", EmployeesToHoursRanking.SHORT_TITLE);
         System.out.println(line);
-        System.out.printf("| %-3s | %-25s | %10s |%n","#", EmployeesToHoursRanking.COL1_NAME, EmployeesToHoursRanking.COL2_NAME);
+        System.out.printf("| %-3s | %-25s | %10s |%n", "#", EmployeesToHoursRanking.COL1_NAME, EmployeesToHoursRanking.COL2_NAME);
         System.out.println(line);
     }
 }

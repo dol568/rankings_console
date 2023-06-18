@@ -12,22 +12,6 @@ import static org.knowm.xchart.style.Styler.LegendPosition.InsideNW;
 
 public class BarChartDisplayMonths implements ExampleChart<CategoryChart> {
 
-    public void displayChart(Map<Object, Object> map) {
-        CategoryChart categoryChart = createChart(map);
-        new SwingWrapper<>(categoryChart).displayChart();
-    }
-
-    public void saveChartToPDF(Map<Object, Object> map) throws IOException {
-        CategoryChart categoryChart = createChart(map);
-        new SwingWrapper<>(categoryChart).displayChart();
-        VectorGraphicsEncoder.saveVectorGraphic(categoryChart, MonthsToHoursRanking.SHORT_TITLE, VectorGraphicsEncoder.VectorGraphicsFormat.PDF);
-    }
-
-    private CategoryChart createChart(Map<Object, Object> map) {
-        ExampleChart<CategoryChart> exampleChart = new BarChartDisplayMonths();
-        return exampleChart.getChart(map);
-    }
-
     @Override
     public CategoryChart getChart(Map<Object, Object> map) {
 
@@ -53,8 +37,25 @@ public class BarChartDisplayMonths implements ExampleChart<CategoryChart> {
             keys.add((String) key);
             vals.add((Double) val);
         }
-        chart.addSeries(MonthsToHoursRanking.SHORT_TITLE,keys, vals);
+        chart.addSeries(MonthsToHoursRanking.SHORT_TITLE, keys, vals);
 
         return chart;
     }
+
+    public void displayChart(Map<Object, Object> map) {
+        CategoryChart categoryChart = createChart(map);
+        new SwingWrapper<>(categoryChart).displayChart();
+    }
+
+    public void saveChartToPDF(Map<Object, Object> map) throws IOException {
+        CategoryChart categoryChart = createChart(map);
+        new SwingWrapper<>(categoryChart).displayChart();
+        VectorGraphicsEncoder.saveVectorGraphic(categoryChart, MonthsToHoursRanking.SHORT_TITLE, VectorGraphicsEncoder.VectorGraphicsFormat.PDF);
+    }
+
+    private CategoryChart createChart(Map<Object, Object> map) {
+        ExampleChart<CategoryChart> exampleChart = new BarChartDisplayMonths();
+        return exampleChart.getChart(map);
+    }
+
 }

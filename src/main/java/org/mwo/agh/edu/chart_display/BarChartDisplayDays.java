@@ -2,7 +2,6 @@ package org.mwo.agh.edu.chart_display;
 
 import org.knowm.xchart.*;
 import org.knowm.xchart.VectorGraphicsEncoder;
-import org.knowm.xchart.VectorGraphicsEncoder.VectorGraphicsFormat;
 import org.mwo.agh.edu.ranking.DaysToHoursRanking;
 import org.mwo.agh.edu.ranking.EmployeesToHoursRanking;
 
@@ -12,22 +11,6 @@ import java.util.*;
 import static org.knowm.xchart.style.Styler.LegendPosition.*;
 
 public class BarChartDisplayDays implements ExampleChart<CategoryChart> {
-
-        public void displayChart(Map<Object, Object> map) {
-            CategoryChart categoryChart = createChart(map);
-            new SwingWrapper<>(categoryChart).displayChart();
-        }
-
-        public void saveChartToPDF(Map<Object, Object> map) throws IOException {
-            CategoryChart categoryChart = createChart(map);
-            new SwingWrapper<>(categoryChart).displayChart();
-            VectorGraphicsEncoder.saveVectorGraphic(categoryChart, EmployeesToHoursRanking.SHORT_TITLE, VectorGraphicsEncoder.VectorGraphicsFormat.PDF);
-        }
-
-        private CategoryChart createChart(Map<Object, Object> map) {
-            ExampleChart<CategoryChart> exampleChart = new BarChartDisplayDays();
-            return exampleChart.getChart(map);
-        }
 
     @Override
     public CategoryChart getChart(Map<Object, Object> map) {
@@ -54,9 +37,24 @@ public class BarChartDisplayDays implements ExampleChart<CategoryChart> {
             keys.add((String) key);
             vals.add((Double) val);
         }
-        chart.addSeries(DaysToHoursRanking.SHORT_TITLE,keys, vals);
+        chart.addSeries(DaysToHoursRanking.SHORT_TITLE, keys, vals);
 
         return chart;
     }
 
+    public void displayChart(Map<Object, Object> map) {
+        CategoryChart categoryChart = createChart(map);
+        new SwingWrapper<>(categoryChart).displayChart();
+    }
+
+    public void saveChartToPDF(Map<Object, Object> map) throws IOException {
+        CategoryChart categoryChart = createChart(map);
+        new SwingWrapper<>(categoryChart).displayChart();
+        VectorGraphicsEncoder.saveVectorGraphic(categoryChart, EmployeesToHoursRanking.SHORT_TITLE, VectorGraphicsEncoder.VectorGraphicsFormat.PDF);
+    }
+
+    private CategoryChart createChart(Map<Object, Object> map) {
+        ExampleChart<CategoryChart> exampleChart = new BarChartDisplayDays();
+        return exampleChart.getChart(map);
+    }
 }
