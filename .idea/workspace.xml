@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc06f4f9-88a0-414a-b0a4-0284844b2203" name="Changes" comment="&quot;jar&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mwo/agh/edu/ranking/ReportGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mwo/agh/edu/ranking/ReportGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/mwo/agh/edu/ranking/ReportGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/mwo/agh/edu/ranking/ReportGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rankings_console-1.0-SNAPSHOT-shaded.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/rankings_console-1.0-SNAPSHOT-shaded.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rankings_console-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/rankings_console-1.0-SNAPSHOT.jar" afterDir="false" />
+    <list default="true" id="bc06f4f9-88a0-414a-b0a4-0284844b2203" name="Changes" comment="&quot;chart_res&quot;">
+      <change beforePath="$PROJECT_DIR$/RANKING PRACOWNIKOW.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spreadsheet.ser" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687062621188</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="&quot;chart_res&quot;">
+      <created>1687064947558</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687064947558</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +141,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;jar&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;jar&quot;" />
+    <MESSAGE value="&quot;chart_res&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;chart_res&quot;" />
   </component>
 </project>
