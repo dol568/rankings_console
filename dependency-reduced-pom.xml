@@ -25,10 +25,6 @@
           </execution>
         </executions>
       </plugin>
-      <plugin>
-        <artifactId>maven-dependency-plugin</artifactId>
-        <version>3.5.0</version>
-      </plugin>
     </plugins>
   </build>
   <properties>
