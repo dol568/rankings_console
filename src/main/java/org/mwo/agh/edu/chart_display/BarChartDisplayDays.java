@@ -50,7 +50,7 @@ public class BarChartDisplayDays implements ExampleChart<CategoryChart> {
     public void saveChartToPDF(Map<Object, Object> map) throws IOException {
         CategoryChart categoryChart = createChart(map);
         new SwingWrapper<>(categoryChart).displayChart();
-        VectorGraphicsEncoder.saveVectorGraphic(categoryChart, EmployeesToHoursRanking.SHORT_TITLE, VectorGraphicsEncoder.VectorGraphicsFormat.PDF);
+        VectorGraphicsEncoder.saveVectorGraphic(categoryChart, DaysToHoursRanking.SHORT_TITLE, VectorGraphicsEncoder.VectorGraphicsFormat.PDF);
     }
 
     private CategoryChart createChart(Map<Object, Object> map) {
