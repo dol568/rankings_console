@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc06f4f9-88a0-414a-b0a4-0284844b2203" name="Changes" comment="&quot;readme_update2&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bc06f4f9-88a0-414a-b0a4-0284844b2203" name="Changes" comment="&quot;chart_update&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687086636215</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="&quot;chart_update&quot;">
+      <created>1687108989513</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687108989513</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +162,7 @@
     <MESSAGE value="&quot;chart_res&quot;" />
     <MESSAGE value="&quot;readme_update&quot;" />
     <MESSAGE value="&quot;readme_update2&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;readme_update2&quot;" />
+    <MESSAGE value="&quot;chart_update&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;chart_update&quot;" />
   </component>
 </project>
